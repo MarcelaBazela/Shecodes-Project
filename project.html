@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sourdough bread 🥖</title>
+    <style>
+
+          body {
+            
+        font-family: Cerebri Sans, Helvetica, Arial, sans-serif;
+        background-color: #785e4d;
+      }
+      h1 {
+        color:#412525;
+        text-align: center;
+      border: 1px solid #596e79;
+      padding: 15px;
+      border-radius: 4px;
+      }
+
+      h2 {
+        color: #785e4d; 
+        text-align: center;
+      font-size:22px;
+
+      }
+      img { display: block;
+    margin: 0 auto;
+max-width: 100%;
+border-radius: 4px;}
+p
+{ line-height: 1.5;
+    font-size: 14px;
+    margin: 20px 0 10px;
+    color:  #785e4d;
+    text-align: justify;
+
+}
+
+.read-more
+{ text-decoration: underline;
+    font-size: 13px;
+    color: #412525;
+
+}
+
+.read-more:hover {text-decoration: underline;
+}
+
+.container {
+    max-width: 600px;
+     margin: 0px auto;
+     padding: 30px;
+     background:#fbe6d9;
+      border-radius: 3px;
+}
+
+button { display: block;
+    margin: 20px auto;
+    color: #ffff;
+    background-color:#596e79;
+    font-size: 18px;
+    padding: 20px 20px;
+    border: none;
+    border-radius: 40px;
+    transition: all 200ms ease;
+        box-shadow: 5px 10px 10px rgb(0, 0, 0, 0.08);
+}
+
+button:hover {
+        opacity: 0.9;
+        cursor: pointer;
+      }
+
+      footer
+
+      {text-align: center;
+        font-size: 10px;
+        }
+
+
+
+    </style>
+  </head>
+  <body>
+    <div class="container">
+    <h1>Discover the Secret of Sourdough</h1>
+    <h2>Learn to bake with your very own sourdough </br>made from scratch</h2>  <hr />
+    <img
+      src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/047/406/original/beginner_sourdough_bread_recipe.jpg?1664745878"
+    />  <hr />
+    <p>
+      <strong>Sourdough Bread</strong> Sourdough can be defined as an intermediate product containing a flour/water mixture that has been fermented by a combination of bacteria, usually heterofermentative strains of lactic acid bacteria and yeast (DeVuyst and Neysens, 2005), resulting in an end product with a sour taste.
+    </br>  </p>
+    <img> 
+    <a href="https://www.sciencedirect.com/topics/food-science/sourdough#:~:text=Sourdough%20can%20be%20defined%20as,product%20with%20a%20sour%20taste." target="_blank" class="read-more">
+    Read more ... </a>
+    </p>
+    <button>Buy the book to get started</button>
+   <footer> This page was built by Marcela Bazela</footer>
+</div>
+   <script>
+
+          function buyBook() {
+
+            let name = prompt("What is your name?");
+        let question = prompt("Choose your emoji. 🍞 // 🥖");
+        let email = prompt("What is your email?");
+
+
+
+        if (question === "🍞" ) {
+          alert("Thank you, " + name + ". Get your hands dirty! 🍞")
+        } else {
+          alert("Thank you, " + name + ". Turn on the oven! 🥖");
+        }
+
+         question = country.toLowerCase().trim();
+      
+      
+      }
+      let contactBook = document.querySelector("button");
+      contactBook.addEventListener("click", buyBook);
+    </script>
+  </body>
+</html>
